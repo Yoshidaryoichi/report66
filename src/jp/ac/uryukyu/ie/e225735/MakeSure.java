@@ -1,20 +1,9 @@
 package jp.ac.uryukyu.ie.e225735;
 import java.util.Random;
-import java.util.Scanner;
 
-public class MakeSure {
-    public static int[]  getnumber(){//プレイヤーの入力を受け取る関数
-        int numbers[] = new int[3] ;
-        int u =3;
-        for(int i=0; i<3; i++){
-        System.out.print(u+"桁目を入力して下さい");
-        Scanner scanner = new Scanner(System.in);
-        int scan = scanner.nextInt();
-        numbers[i] = scan;
-        u-=1;
-    }
-        return numbers;
-    }
+
+public class MakeSure extends GetNumber{
+    
     public static int[] correctNumber(){//答えとなる三桁の整数をランダムに作る関数//
         while(true){
             Random rand = new Random();

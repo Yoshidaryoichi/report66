@@ -1,6 +1,6 @@
 package jp.ac.uryukyu.ie.e225735;
 
-public class main extends MakeSure{
+public class Main extends MakeSure {
     public static void main(String args[]){//正解となる３桁の整数を作り、正解が出るまで繰り返す。
         int[] correctnumber=correctNumber();
         while(true){
