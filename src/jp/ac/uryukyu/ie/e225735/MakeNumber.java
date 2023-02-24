@@ -4,12 +4,6 @@ import java.util.Random;
 
 public class MakeNumber {
 
-    public static void main(String args[]){
-        
-        int i[]=correctNumber();
-        System.out.println(i[0]+""+i[1]+""+i[2]);
-    }
-
     public static int[] correctNumber(){
         while(true){
             Random rand = new Random();
