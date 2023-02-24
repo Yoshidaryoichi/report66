@@ -1,7 +1,7 @@
 package jp.ac.uryukyu.ie.e225735;
 
 public class main extends MakeSure{
-    public static void main(String args[]){
+    public static void main(String args[]){//正解となる３桁の整数を作り、正解が出るまで繰り返す。
         int[] correctnumber=correctNumber();
         while(true){
             int[] getnumber = getnumber();
@@ -10,8 +10,8 @@ public class main extends MakeSure{
                 System.out.println("あたり");
                 break;
             }
-            else{
-                System.out.println("close:"+makesure[1]+"correct"+makesure[0]);
+            else{//ヒントを出力している。
+                System.out.println("close:"+makesure[1]+" "+"correct"+makesure[0]);
             }
         }
     }

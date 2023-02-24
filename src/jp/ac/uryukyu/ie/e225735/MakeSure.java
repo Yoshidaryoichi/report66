@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class MakeSure {
-    public static int[]  getnumber(){
+    public static int[]  getnumber(){//プレイヤーの入力を受け取る関数
         int numbers[] = new int[3] ;
         int u =3;
         for(int i=0; i<3; i++){
@@ -29,7 +29,7 @@ public class MakeSure {
    
        
     }
-    public static int[] makesure(int[] correctNumber,int[] getnumber){
+    public static int[] makesure(int[] correctNumber,int[] getnumber){//プレイヤーの入力と答えが合っているかを調べる関数
         int close=0;
         int correct=0;
         if((correctNumber[0]==getnumber[0])&&(correctNumber[1]==getnumber[1])&&(correctNumber[2]==getnumber[2])){
@@ -49,14 +49,5 @@ public class MakeSure {
         }
         int[] hints = {correct,close};
         return hints;
-    }
-
-    public static void display(int[] list){
-        if(list.length==3){
-            System.out.println("あたり");
-        }
-        else{
-            System.out.println("close:"+list[1]+"correct"+list[0]);
-        }
     }
 }
